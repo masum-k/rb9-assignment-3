@@ -199,7 +199,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="mt-24 mx-auto max-w-6xl">
+    <section class="mt-24 mx-auto lg:max-w-6xl">
       <!-- Text -->
       <div>
         <div class="text-center">
@@ -214,19 +214,20 @@
         </div>
       </div>
       <!-- Cards -->
-      <div class="grid grid-cols-4 gap-6 grid-rows-2">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 lg:grid-rows-2">
         <!-- Card 1 -->
-        <div class="p-6 col-span-3 border-2 rounded-xl">
-          <div class="flex">
-            <div class="w-full">
-              <img src="./assets/img1.png" alt="">
+        <div class="lg:p-6 lg:col-span-3 border-2 rounded-xl">
+          <div class="lg:flex">
+            <div class="lg:w-full">
+              <img class="max-sm:w-full" src="./assets/img1.png" alt="">
             </div>
             <div class="space-y-5">
               <h3 class="text-2xl font-bold">
                 Commercial
               </h3>
               <p>
-                Explore a wide selection of commercial properties for sale or lease, including office spaces, retail locations, and industrial sites. Find the perfect property to grow your business in prime locations.
+                Explore a wide selection of commercial properties for sale or lease, including office spaces, retail
+                locations, and industrial sites. Find the perfect property to grow your business in prime locations.
               </p>
               <h4 class="text-xl font-bold">
                 View Details<i class="fa-solid fa-arrow-right ml-2 bg-lime-300 rounded-full p-1 -rotate-45"></i>
@@ -237,24 +238,24 @@
 
         <!-- Card 2 -->
         <div class="border-2 rounded-xl ">
-          <img class="h-full p-6" src="./assets/img2.png" alt="">
+          <img class="h-full max-sm:w-full p-6" src="./assets/img2.png" alt="">
         </div>
 
         <!-- Card 3 -->
-        <div class="border-2 rounded-xl p-6">
-          <img src="./assets/img3.png" alt="">
+        <div class="border-2 rounded-xl ">
+          <img class="h-full max-sm:w-full p-6" src="./assets/img3.png" alt="">
         </div>
 
         <!-- Card 4 -->
-        <div class="flex col-span-2 border-2 rounded-xl p-6">
+        <div class="lg:flex lg:col-span-2 border-2 rounded-xl p-6">
           <!-- image -->
-          <img class="w-full" src="./assets/img4.png" alt="">
+          <img class="lg:w-full max-sm:w-full" src="./assets/img4.png" alt="">
           <!-- Text -->
           <div class="space-y-3 ml-6">
             <h3 class="text-2xl font-bold">
               Commercial
             </h3>
-            <p >
+            <p>
               Browse commercial properties for sale or lease, ideal for offices, retail, and industrial use.
             </p>
             <h4 class=" text-xl font-bold">
@@ -264,10 +265,36 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="border-2 rounded-xl p-6">
-          <div>
-            <img src="./assets/img5.png" alt="">
-          </div>
+        <div class="border-2 rounded-xl ">
+          <img class="h-full max-sm:w-full p-6" src="./assets/img5.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Input Section -->
+    <section class="pt-20 bg-cover bg-[url('./assets/bg.jpg')]">
+      <!-- Text -->
+      <div class="text-center">
+        <p class="bg-lime-100 font-bold w-40 mx-auto rounded-full mb-6 p-1 text-center"><i
+            class="fa-solid fa-arrow-right mr-2"></i>Let’s Connect
+        </p>
+        <h1 class="text-5xl font-bold">Let’s Discuss Next Project</h1>
+        <p class="py-6">
+          Explore our latest portfolio, featuring innovative projects that reflect our <br>creativity and design
+          expertise.
+        </p>
+      </div>
+      <div class="lg:max-w-screen-2xl mx-auto">
+        <div class="lg:flex justify-center mb-5 lg:gap-4 max-sm:space-y-4 px-4">
+          <input class="p-5 rounded-full lg:w-1/4 w-full" placeholder="First Name*" type="text">
+          <input class="p-5 rounded-full lg:w-1/4 w-full" placeholder="Last Name*" type="text">
+        </div>
+        <div class="lg:flex justify-center lg:gap-4 max-sm:space-y-4 px-4">
+          <input class="p-5 rounded-full lg:w-1/4 w-full" placeholder="Phone Number*" type="text">
+          <input class="p-5 rounded-full lg:w-1/4 w-full" placeholder="Email Address*" type="text">
+        </div>
+        <div class="lg:ml-96 ml-10 mt-5">
+          <textarea class="max-sm:w-11/12 p-5 rounded-xl" placeholder="Write your message here" rows="8" cols="80"></textarea>
         </div>
       </div>
     </section>
